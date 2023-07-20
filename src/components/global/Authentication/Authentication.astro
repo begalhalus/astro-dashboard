@@ -1,0 +1,16 @@
+<script>
+	const storedParams = JSON.parse(localStorage.getItem("config"))
+
+	if (storedParams && storedParams.datetime) {
+		const deadline = 6 * 60 * 60 * 1000
+		const currentTime = new Date().getTime()
+		const savedTime = storedParams.datetime
+		console.log(storedParams.datetime)
+		if (currentTime - savedTime >= deadline) {
+			localStorage.removeItem("config")
+			window.location.href = "/login"
+		}
+	} else {
+		window.location.href = "/login"
+	}
+</script>

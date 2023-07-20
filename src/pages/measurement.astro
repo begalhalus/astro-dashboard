@@ -1,0 +1,366 @@
+---
+// Component imports
+import { Layout } from "@globals"
+import { Authentication } from "../components/global/Authentication"
+export let route_nav = ["Dashboard", "Analytic Dashboard"]
+---
+
+<Authentication />
+<Layout title="Measurement Dashboard" route_nav={route_nav}>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="card-body">
+				<div class="pt-3">
+					<div class="row justify-content-center">
+						<div class="col-xl-10">
+							<div>
+								<div class="row">
+									<div class="col-12">
+										<div class="card-body">
+											<form>
+												<div class="row">
+													<div
+														class="col d-flex justify-content-between align-items-center"
+													>
+														<div class="d-flex">
+															<button type="button" class="btn btn-primary"
+																><i class="mdi mdi-plus me-1"></i> Manual Input</button
+															>
+														</div>
+
+														<div class="d-flex">
+															<select class="form-control select2">
+																<option value="CA">COM 1</option>
+																<option value="NV">COM 2</option>
+																<option value="OR">COM 3</option>
+															</select>
+
+															<span class="mx-2"></span>
+
+															<div class="d-flex">
+																<button
+																	type="button"
+																	class="btn btn-primary waves-effect btn-label waves-light me-2"
+																>
+																	<i class="bx bx bx-power-off label-icon"></i> Connect
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="border p-3 rounded mt-4 bg-white">
+											<div class="d-flex align-items-center mb-3">
+												<div class="avatar-xs me-3">
+													<span
+														class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18"
+													>
+														<i class="bx bx-barcode"></i>
+													</span>
+												</div>
+												<h5 class="font-size-12 mb-0">Nomor Lambung</h5>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="text-muted mt-3">
+														<h4>DT-001</h4>
+														<p class="font-size-10 mb-0">DT Vendor 001 - 01</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3">
+										<div class="border p-3 rounded mt-4 bg-white">
+											<div class="d-flex align-items-center mb-3">
+												<div class="avatar-xs me-3">
+													<span
+														class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18"
+													>
+														<i class="bx bx-barcode"></i>
+													</span>
+												</div>
+												<h5 class="font-size-12 mb-0">Vendor</h5>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="text-muted mt-3">
+														<h4>VNDR-001</h4>
+														<p class="font-size-10 mb-0">Vendor Satu</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="border p-3 rounded mt-4 bg-white">
+											<div class="d-flex align-items-center mb-3">
+												<div class="avatar-xs me-3">
+													<span
+														class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18"
+													>
+														<i class="bx bx-barcode"></i>
+													</span>
+												</div>
+												<h5 class="font-size-12 mb-0">Vehicle Weight (Kg)</h5>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="text-muted mt-3">
+														<h4>16000</h4>
+														<p class="font-size-10 mb-0">
+															Last Calibration on 05 June 2023
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="border p-3 rounded mt-4 bg-white">
+											<div class="d-flex align-items-center mb-3">
+												<div class="avatar-xs me-3">
+													<span
+														class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18"
+													>
+														<i class="bx bx-barcode"></i>
+													</span>
+												</div>
+												<h5 class="font-size-12 mb-0">Berat Muatan (Kg)</h5>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="text-muted mt-3">
+														<h4>0</h4>
+														<p class="font-size-10 mb-0">
+															Total Measurement: 0
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end card body -->
+			</div>
+			<!-- end card -->
+		</div>
+		<!-- end col -->
+	</div>
+	<!-- end row -->
+	<span class="mx-2"></span>
+	<div class="row">
+		<div class="col-xl-6">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title mb-4">Log Penimbangan</h4>
+					<div class="table-responsive">
+						<table class="table align-middle table-nowrap mb-0">
+							<thead class="table-light">
+								<tr>
+									<th class="align-middle">Timestamp</th>
+									<th class="align-middle">Vehicle Type</th>
+									<th class="align-middle">Average Weight (Kg)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>Roda 4</td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>Roda 4</td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>Roda 4</td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>Roda 4</td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>Roda 4</td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>Roda 4</td>
+									<td>1000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- end table-responsive -->
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-6">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title mb-4">Detail Penimbangan</h4>
+					<div class="table-responsive">
+						<table class="table align-middle table-nowrap mb-0">
+							<thead class="table-light">
+								<tr>
+									<th class="align-middle">Nomor Lambung</th>
+									<th class="align-middle">Vendor</th>
+									<th class="align-middle">Brand</th>
+									<th class="align-middle">Total Weight (Kg)</th>
+									<th class="align-middle">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											DT-001</a
+										>
+									</td>
+									<td>VNDR-001</td>
+									<td>Hino</td>
+									<td>2000</td>
+									<td>
+										<div class="d-flex gap-3">
+											<a href="javascript:void(0);" class="text-primary"
+												><i class="mdi mdi-pencil font-size-18"></i></a
+											>
+											<a href="javascript:void(0);" class="text-danger"
+												><i class="mdi mdi-delete font-size-18"></i></a
+											>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											DT-001</a
+										>
+									</td>
+									<td>VNDR-001</td>
+									<td>Hino</td>
+									<td>2000</td>
+									<td>
+										<div class="d-flex gap-3">
+											<a href="javascript:void(0);" class="text-primary"
+												><i class="mdi mdi-pencil font-size-18"></i></a
+											>
+											<a href="javascript:void(0);" class="text-danger"
+												><i class="mdi mdi-delete font-size-18"></i></a
+											>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											DT-001</a
+										>
+									</td>
+									<td>VNDR-001</td>
+									<td>Hino</td>
+									<td>2000</td>
+									<td>
+										<div class="d-flex gap-3">
+											<a href="javascript:void(0);" class="text-primary"
+												><i class="mdi mdi-pencil font-size-18"></i></a
+											>
+											<a href="javascript:void(0);" class="text-danger"
+												><i class="mdi mdi-delete font-size-18"></i></a
+											>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											DT-001</a
+										>
+									</td>
+									<td>VNDR-001</td>
+									<td>Hino</td>
+									<td>2000</td>
+									<td>
+										<div class="d-flex gap-3">
+											<a href="javascript:void(0);" class="text-primary"
+												><i class="mdi mdi-pencil font-size-18"></i></a
+											>
+											<a href="javascript:void(0);" class="text-danger"
+												><i class="mdi mdi-delete font-size-18"></i></a
+											>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											DT-001</a
+										>
+									</td>
+									<td>VNDR-001</td>
+									<td>Hino</td>
+									<td>2000</td>
+									<td>
+										<div class="d-flex gap-3">
+											<a href="javascript:void(0);" class="text-primary"
+												><i class="mdi mdi-pencil font-size-18"></i></a
+											>
+											<a href="javascript:void(0);" class="text-danger"
+												><i class="mdi mdi-delete font-size-18"></i></a
+											>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- end table-responsive -->
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>

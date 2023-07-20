@@ -1,0 +1,354 @@
+---
+// Component imports
+import { Layout } from "@globals"
+import { Authentication } from "../components/global/Authentication"
+export let route_nav = ["Dashboard", "Analytic Dashboard"]
+---
+
+<Authentication />
+<Layout title="Analytic Dashboard" route_nav={route_nav}>
+	<div class="row">
+		<div class="col-xl-5">
+			<div class="card overflow-hidden">
+				<div class="bg-primary bg-soft">
+					<div class="row">
+						<div class="col-7">
+							<div class="text-primary p-3">
+								<h5 class="text-primary">Welcome Back !</h5>
+								<p>PT. Bambu Kuning</p>
+							</div>
+						</div>
+						<div class="col-5 align-self-end">
+							<img src="/images/profile-img.png" alt="" class="img-fluid" />
+						</div>
+					</div>
+				</div>
+				<div class="card-body pt-0">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="avatar-md profile-user-wid mb-4">
+								<img
+									src="/images/users/avatar-1.jpg"
+									alt=""
+									class="img-thumbnail rounded-circle"
+								/>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="pt-4">
+								<div class="row">
+									<div class="col-12">
+										<h5 class="font-size-15" id="namez">Anonymous</h5>
+										<p class="text-muted mb-0" id="rolez">Guest</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title mb-4">Plant / Factory</h4>
+					<div class="table-responsive">
+						<table class="table align-middle table-nowrap mb-0">
+							<thead class="table-light">
+								<tr>
+									<th class="align-middle">Plant</th>
+									<th class="align-middle">Capacity</th>
+									<th class="align-middle">Persentage</th>
+									<th class="align-middle">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Plant 1</td>
+									<td>20000</td>
+									<td>
+										<div class="progress">
+											<div
+												class="progress-bar"
+												role="progressbar"
+												style="width: 25%;"
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												25%
+											</div>
+										</div>
+									</td>
+									<td>
+										<!-- Button trigger modal -->
+										<button
+											type="button"
+											class="btn btn-outline-primary waves-effect waves-light"
+											data-bs-toggle="modal"
+											data-bs-target=".orderdetailsModal"
+										>
+											Enabled
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Plant 2</td>
+									<td>20000</td>
+									<td>
+										<div class="progress">
+											<div
+												class="progress-bar"
+												role="progressbar"
+												style="width: 25%;"
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												25%
+											</div>
+										</div>
+									</td>
+									<td>
+										<!-- Button trigger modal -->
+										<button
+											type="button"
+											class="btn btn-outline-primary waves-effect waves-light"
+											data-bs-toggle="modal"
+											data-bs-target=".orderdetailsModal"
+										>
+											Enabled
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Plant 3</td>
+									<td>20000</td>
+									<td>
+										<div class="progress">
+											<div
+												class="progress-bar"
+												role="progressbar"
+												style="width: 25%;"
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												25%
+											</div>
+										</div>
+									</td>
+									<td>
+										<!-- Button trigger modal -->
+										<button
+											type="button"
+											class="btn btn-outline-primary waves-effect waves-light"
+											data-bs-toggle="modal"
+											data-bs-target=".orderdetailsModal"
+										>
+											Enabled
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Plant 4</td>
+									<td>20000</td>
+									<td>
+										<div class="progress">
+											<div
+												class="progress-bar"
+												role="progressbar"
+												style="width: 25%;"
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												25%
+											</div>
+										</div>
+									</td>
+									<td>
+										<!-- Button trigger modal -->
+										<button
+											type="button"
+											class="btn btn-outline-primary waves-effect waves-light"
+											data-bs-toggle="modal"
+											data-bs-target=".orderdetailsModal"
+										>
+											Enabled
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-7">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-3">
+								<div class="avatar-xs me-3">
+									<span
+										class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18"
+									>
+										<i class="bx bx-copy-alt"></i>
+									</span>
+								</div>
+								<h5 class="font-size-14 mb-0">Total Vehicle</h5>
+							</div>
+							<div class="text-muted mt-4">
+								<h4>
+									11 <i class="mdi mdi-chevron-down ms-1 text-danger"></i>
+								</h4>
+								<div class="d-flex">
+									<span class="badge badge-soft-danger font-size-12">
+										- 12%
+									</span>
+									<span class="ms-2 text-truncate">Since last week</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-3">
+								<div class="avatar-xs me-3">
+									<span
+										class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18"
+									>
+										<i class="bx bx-archive-in"></i>
+									</span>
+								</div>
+								<h5 class="font-size-14 mb-0">Vehicle - IN</h5>
+							</div>
+							<div class="text-muted mt-4">
+								<h4>
+									6 <i class="mdi mdi-chevron-down ms-1 text-danger"></i>
+								</h4>
+								<div class="d-flex">
+									<span class="badge badge-soft-danger font-size-12">
+										- 18%
+									</span>
+									<span class="ms-2 text-truncate">Since last week</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-3">
+								<div class="avatar-xs me-3">
+									<span
+										class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18"
+									>
+										<i class="bx bx-purchase-tag-alt"></i>
+									</span>
+								</div>
+								<h5 class="font-size-14 mb-0">Vehicle - OUT</h5>
+							</div>
+							<div class="text-muted mt-4">
+								<h4>
+									5 <i class="mdi mdi-chevron-up ms-1 text-success"></i>
+								</h4>
+								<div class="d-flex">
+									<span class="badge badge-soft-success font-size-12">
+										+ 27%
+									</span>
+									<span class="ms-2 text-truncate">Since last week</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end row -->
+
+			<div class="card">
+				<div class="card-body">
+					<div class="d-sm-flex flex-wrap">
+						<h4 class="card-title mb-4">Stock History</h4>
+						<div class="ms-auto">
+							<ul class="nav nav-pills">
+								<li class="nav-item">
+									<a class="nav-link active" href="#">Year</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="stacked-column-chart" class="apex-charts" dir="ltr"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title mb-4">Monitoring</h4>
+					<div class="table-responsive">
+						<table class="table align-middle table-nowrap mb-0">
+							<thead class="table-light">
+								<tr>
+									<th class="align-middle">Timestamp</th>
+									<th class="align-middle">Nomor Lambung</th>
+									<th class="align-middle">Vendor</th>
+									<th class="align-middle">Plan / Factory</th>
+									<th class="align-middle">Berat Muatan (Kg)</th>
+									<th class="align-middle">Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>DT-001</td>
+									<td>Vendor Satu</td>
+									<td>Plant A</td>
+									<td>20000</td>
+									<td>
+										<span
+											class="badge badge-pill badge-soft-success font-size-11"
+											>IN</span
+										>
+									</td>
+								</tr>
+								<tr>
+									<td
+										><a href="javascript: void(0);" class="text-body fw-bold">
+											07/07/2023, 10:10:10</a
+										>
+									</td>
+									<td>DT-001</td>
+									<td>Vendor Satu</td>
+									<td>Plant A</td>
+									<td>20000</td>
+									<td>
+										<span
+											class="badge badge-pill badge-soft-danger font-size-11"
+											>OUT</span
+										>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- end table-responsive -->
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+<script is:inline src="/libs/apexcharts/apexcharts.min.js"></script>
+<script is:inline src="/js/pages/dashboard.init.js"></script>
