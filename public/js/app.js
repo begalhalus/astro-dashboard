@@ -77,4 +77,8 @@
         });
         roleElement.textContent = storedParams.role;
     }
+    $("#logoutLink").on("click", function () {
+        localStorage.removeItem("config");
+        window.location.href = "/login";
+    });
 }(jQuery);

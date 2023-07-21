@@ -214,7 +214,7 @@ import { LoginLayout } from "@globals"
 						const params = {
 							token: data.results.data.token,
 							name: data.results.data.name,
-							role: 1,
+							role: "guest",
 							datetime: new Date().getTime()
 						}
 						localStorage.setItem("config", JSON.stringify(params))
